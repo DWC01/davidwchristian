@@ -9,6 +9,7 @@ class QuestionnairesController < ApplicationController
   # GET /questionnaires/1
   def show
     @questionnaires = Questionnaire.all
+    render layout: 'no-sidebar'
   end
 
   # GET /questionnaires/new
