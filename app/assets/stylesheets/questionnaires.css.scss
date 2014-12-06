@@ -1,0 +1,52 @@
+.survey-wrapper {
+  margin: 0 auto 100px auto;
+  width: 50%;  
+}
+
+.survey-title {
+  color: #333;
+  & i {
+    font-size: 25px;
+    margin-right: 20px;
+    color: #67e875;
+  }
+}
+
+.survey-label {
+  text-align: left;
+  & p {
+    color: #333;
+    font-size: 15px;
+  }
+}
+
+.survey-input {
+  text-align: left;
+  color: #333;
+  font-size: 14px;
+  & label {
+    margin-right: 30px;
+  }
+  & input[type="radio"], input[type="checkbox"]{
+    margin-right: 5px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  & .features-input {
+    margin-top: 10px;
+    width: 60%;
+  }
+}
+
+.invested {
+  width: 20%;
+}
+
+.actions{
+  width: 100%;
+  & input[type="submit"] {
+    width: 100%;
+    font-size: 17px;
+  }
+}

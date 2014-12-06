@@ -1,0 +1,103 @@
+<div class="survey-wrapper">
+  <div class="center survey-title">
+    <h1>
+      <i class="fa fa-bar-chart"></i> 
+      Results
+    </h1>
+    <hr>
+  </div>
+
+  <section class="center">
+    <div class="survey-label">
+      <p>
+        Total Filled Out:
+        <%= @questionnaires.length %>
+      </p>
+    </div>
+    <hr>
+    <% @questionnaires.each do |q| %>
+    <div class="survey-label">
+      <p>
+        Company: <%= q.company %>
+      </p>
+      <p>
+        Invested: <%= q.invested %>
+      </p>
+      <p>
+        Age: <%= q.age %>
+      </p>
+      <p>
+        Num Visits: <%= q.visits_desktop %>
+      </p>
+      <p>
+        Num Mobile: <%= q.visits_mobile %>
+      </p>
+      <p>
+        Routine:
+      </p>
+      <p>
+        1.) <%= q.features_visited_1 %>
+      </p>
+      <p>
+        2.) <%= q.features_visited_2 %>
+      </p>
+      <p>
+        3.) <%= q.features_visited_3 %>
+      </p>
+      <p>
+        4.) <%= q.features_visited_4 %>
+      </p>
+      <p>
+        5.) <%= q.features_visited_5 %>
+      </p>
+      <p>
+        Delightful Features:
+      </p>
+      <p>
+        1.) <%= q.delightful_features_1 %>
+      </p>
+      <p>
+        2.) <%= q.delightful_features_2 %>
+      </p>
+      <p>
+        3.) <%= q.delightful_features_3 %>
+      </p>
+      <p>
+        4.) <%= q.delightful_features_4 %>
+      </p>
+      <p>
+        5.) <%= q.delightful_features_5 %>
+      </p>
+      <p>
+        Annoying Features:
+      </p>
+      <p>
+        1.) <%= q.annoying_features_1 %>
+      </p>
+      <p>
+        2.) <%= q.annoying_features_2 %>
+      </p>
+      <p>
+        3.) <%= q.annoying_features_3 %>
+      </p>
+      <p>
+        4.) <%= q.annoying_features_4 %>
+      </p>
+      <p>
+        5.) <%= q.annoying_features_5 %>
+      </p>
+      <p>
+      Feature Requests: 
+      <%= q.feature_requests %>
+      </p>
+    </div>
+    <hr>
+    <% end %>
+
+    <div class="survey-input">
+      
+    </div>
+    <hr>
+     
+  </section>
+</div>

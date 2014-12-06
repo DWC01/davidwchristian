@@ -1,0 +1,187 @@
+<%= form_for @questionnaire do |f| %>
+  <div class="survey-label">
+    <p>
+      Services used?
+    </p>
+  </div>
+  <div class="survey-input">
+    <%= f.radio_button :company, 'Wealthfront' %> 
+    <%= label :company, 'Wealthfront' %>
+    <%= f.radio_button :company, 'Betterment' %>
+    <%= label :company, 'Betterment' %>
+    <%= f.radio_button :company, 'Both' %>
+    <%= label :company, 'Both' %>
+  </div>
+  <hr>
+
+  <div class="survey-label">
+    <p>
+      Total Invested?
+    </p>
+  </div>
+  <div class="survey-input">
+    <%= f.radio_button :invested, ' > 10k' %> 
+    <%= label :invested, '10k - 40k' %>
+    <%= f.radio_button :invested, ' > 40k' %>
+    <%= label :invested, ' > 40k' %>
+    <%= f.radio_button :invested, ' > 70k' %>
+    <%= label :invested, ' > 70k' %>
+    <%= f.radio_button :invested, ' > 100k' %>
+    <%= label :invested, ' > 100k' %>
+    <%= f.radio_button :invested, ' > 200k' %>
+    <%= label :invested, ' > 200k' %>
+  </div>
+  <hr>
+
+  <div class="survey-label">
+    <p>
+      Age?
+    </p>
+  </div>
+  <div class="survey-input" >
+    <%= f.radio_button :age, '20 - 25' %> 
+    <%= label :age, '20 - 25' %>
+    <%= f.radio_button :age, '20 - 30' %>
+    <%= label :age, '25 - 30' %>
+    <%= f.radio_button :age, '30 - 35' %>
+    <%= label :age, '30 - 35' %>
+    <%= f.radio_button :age, '35 - 40' %>
+    <%= label :age, '35 - 40' %>
+    <%= f.radio_button :age, '40 - 45' %>
+    <%= label :age, '40 - 45' %>
+    <%= f.radio_button :age, '45 - 50' %>
+    <%= label :age, ' > 55 ' %>
+  </div>
+  <hr>
+  
+  <div class="survey-label">
+    <p> 
+      How often do you visit your analytics Dashboard?
+    </p>
+  </div>
+  <div class="survey-input">
+    <%= f.radio_button :visits_desktop, 'Daily' %> 
+    <%= label :visits_desktop, 'Daily' %>
+    <%= f.radio_button :visits_desktop, 'Weekly' %>
+    <%= label :visits_desktop, 'Weekly' %>
+    <%= f.radio_button :visits_desktop, 'Monthly' %>
+    <%= label :visits_desktop, 'Monthly' %>
+  </div>
+  <hr>
+
+  <div class="survey-label">
+    <p> 
+      Mobile Dash?
+    </p>
+  </div>
+  <div class="survey-input">
+    <%= f.radio_button :visits_mobile, 'Daily' %> 
+    <%= label :visits_mobile, 'Daily' %>
+    <%= f.radio_button :visits_mobile, 'Weekly' %>
+    <%= label :visits_mobile, 'Weekly' %>
+    <%= f.radio_button :visits_mobile, 'Monthly' %>
+    <%= label :visits_mobile, 'Monthly' %>
+  </div>
+  <hr>
+  
+  <div class="survey-label">
+    <p> 
+      Top areas/analytics you routinely check?
+    </p>
+  </div>
+  <div class="survey-input">
+    <%= f.text_field :features_visited_1, 
+        :class => "form-control features-input",
+        :placeholder => 'feature 1..'  
+    %>
+    <%= f.text_field :features_visited_2,
+        :class => "form-control features-input",
+        :placeholder => 'feature 2..'  
+    %>
+    <%= f.text_field :features_visited_3,
+        :class => "form-control features-input",
+        :placeholder => 'feature 3..'  
+    %>
+    <%= f.text_field :features_visited_4,
+        :class => "form-control features-input",
+        :placeholder => 'feature 4..?'  
+    %>
+    <%= f.text_field :features_visited_5,
+        :class => "form-control features-input",
+        :placeholder => 'feature 5..?'  
+    %>
+  </div>
+  <hr>
+
+  <div class="survey-label">
+    <p>
+      What analytics/features make you happy?
+    </p>
+  </div>
+  <div class="survey-input">
+    <%= f.text_field :delightful_features_1, 
+      :class => "form-control features-input",
+      :placeholder => 'feature 1..'  
+    %>
+    <%= f.text_field :delightful_features_2, 
+      :class => "form-control features-input",
+      :placeholder => 'feature 2..'
+    %>
+    <%= f.text_field :delightful_features_3, 
+      :class => "form-control features-input",
+      :placeholder => 'feature 3..'
+    %>
+    <%= f.text_field :delightful_features_4, 
+      :class => "form-control features-input",
+      :placeholder => 'feature 4..?'
+    %>
+    <%= f.text_field :delightful_features_5, 
+      :class => "form-control features-input",
+      :placeholder => 'feature 5..?'
+    %>
+  </div>
+  <hr>
+
+  <div class="survey-label">
+    <p>
+      Any features interupt your routine/flow?
+    </p>
+  </div>
+  <div class="survey-input">
+    <%= f.text_field :annoying_features_1,
+      :class => "form-control features-input",
+      :placeholder => 'feature 1..'  
+    %>
+    <%= f.text_field :annoying_features_2,
+      :class => "form-control features-input",
+      :placeholder => 'feature 2..'  
+    %>
+    <%= f.text_field :annoying_features_3,
+      :class => "form-control features-input",
+      :placeholder => 'feature 3..'  
+    %>
+    <%= f.text_field :annoying_features_4,
+      :class => "form-control features-input",
+      :placeholder => 'feature 4..?'  
+    %>
+    <%= f.text_field :annoying_features_5,
+      :class => "form-control features-input",
+      :placeholder => 'feature 5..?'  
+    %>
+  </div>
+  <hr>
+
+  <div class="survey-label">
+    <p>
+      Feature Requests? Anyting else?
+    </p>
+  </div>
+  <div class="survey-input">
+    <%= f.text_area :feature_requests, size: "60x5", :class => "form-control"  %>
+  </div>
+  <hr> 
+
+  <div class="actions pull-left">
+    <%= f.submit "Submit ..and thank you!", :class => "btn btn-success" %>
+  </div>
+<% end %>
