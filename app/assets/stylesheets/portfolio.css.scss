@@ -1,14 +1,28 @@
-.portfolio-wrapper{
+.portfolio-wrapper {
   position: relative;
-  margin: 55px auto 0 330px;
+  margin: 55px auto;
+  padding-top: 10px;
 }
 
-.portfolio-item{
+.portfolio-item {
+  margin: 0 auto;
+  width: 820px;
+}
+
+.portfolio-item-header {
+  color: #333;
+  &:hover {
+   color: #67e875;
+   text-decoration: none;
+   outline: none;
+  }
+}
+
+.portfolio-item-image {
   width: 22%;
-  float: left;
-  margin: 20px 5.6%;
+  margin: 20px 0;
   & img {
-   width: 225px;
+   width: 300px;
   }
 }
 

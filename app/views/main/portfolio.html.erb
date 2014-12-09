@@ -1,25 +1,53 @@
-<!-- <div class="center">
-  <h1> 
-    Some things I've worked on.. 
-  </h1>  
+<div class="portfolio-wrapper">
   <div class="portfolio-item">
-    <%= image_tag 'dat-landscape.png' %>
-    <p> 
-      The Display Advertsing Technology Landscape
-    </p>
-  </div>
-
+    <h3> 
+      <%= link_to @displayadtech, target: "_blank", :class =>"portfolio-item-header" do %>
+        The Display Advertising Technology Landscape
+      <% end %> 
+      <br>
+      <small> 
+        Ruby on Rails, jmpress, HTML5, CSS3, JavaScript
+      </small>
+    </h3>
+    <%= link_to @displayadtech, target: "_blank" do %>
+      <div class="portfolio-item-image">
+        <%= image_tag 'dat-landscape.png', :class => "flat-panel" %>
+      </div>
+    <% end %>
+    <hr>
+  </div><!-- end portfolio-item -->
   <div class="portfolio-item">
-     <%= image_tag 'dat-landscape.png' %>
-     <p> 
-      Display AdTech
-     </p>
-  </div>
-
-  <div class="portfolio-item">
-     <%= image_tag 'dat-landscape.png' %>
-     <p> 
-      Live It Up Social
-     </p>
-  </div>
-</div> -->
+    <h3> 
+      <%= link_to 'http://displayadtech.com', target: "_blank", :class =>"portfolio-item-header" do %>
+        Display {AdTech}
+      <% end %> 
+      <br>
+      <small> 
+        Ruby on Rails, jmpress, AWS, HTML5, CSS3, JavaScript
+      </small>
+    </h3>
+    <%= link_to 'http://displayadtech.com', target: "_blank" do %>
+      <div class="portfolio-item-image">
+        <%= image_tag 'display-adtech.png', :class => "flat-panel" %>
+      </div>
+    <% end %>
+    <hr>
+  </div><!-- end portfolio-item -->
+  <!-- <div class="portfolio-item">
+    <h3> 
+      <%= link_to 'http://liveitupsocial.herokuapp.com/', target: "_blank", :class =>"portfolio-item-header" do %>
+        Live It Up Social
+      <% end %> 
+      <br>
+      <small> 
+        Ruby on Rails, jmpress, HTML5, CSS3, JavaScript
+      </small>
+    </h3>
+    <%= link_to 'http://liveitupsocial.herokuapp.com/', target: "_blank" do %>
+      <div class="portfolio-item-image">
+        <%= image_tag 'live-it-up.png', :class => "flat-panel" %>
+      </div>
+    <% end %>
+    <hr>
+  </div><!-- end portfolio-item --> 
+</div><!-- end portfolio-wrapper -->

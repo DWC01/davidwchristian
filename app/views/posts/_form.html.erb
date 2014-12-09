@@ -1,0 +1,22 @@
+<%= form_for @post do |f| %>
+  <div class="survey-input">
+    <%= f.text_field :title, :class => "form-control features-input",
+      :placeholder => 'title'
+    %>
+  </div>
+  <div class="survey-input">
+    <%= f.text_field :category,
+      :class => "form-control features-input",
+      :placeholder => 'category'  
+    %>
+  </div>
+  <br>
+  <div class="survey-input">
+    <%= f.text_area :content, size: "60x5", :class => "form-control",
+      :placeholder => 'content'  %>
+  </div>
+  <br>
+  <div class="actions pull-left">
+    <%= f.submit "FTW", :class => "btn btn-success" %>
+  </div>
+<% end %>

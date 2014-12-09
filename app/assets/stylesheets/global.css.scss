@@ -6,6 +6,12 @@ html {
   height: 100%;
 }
 
+a:visited, a:focused{
+  color: #333;
+  outline: none;
+  text-decoration: none;
+}
+
 body,h1,h2,h3,h4,h5,h6 {
   font-family: $font-stack;
   color: $text-color;
@@ -16,14 +22,31 @@ body,h1,h2,h3,h4,h5,h6 {
 /*----------------------*/
 
 .container{
-  width:  100% !important;
+  width: 62% !important;
   height: 100% !important;
-  margin:  0px !important;
-  padding: 0px !important;
+  margin: 0px auto 0px 333px !important;
+}
+
+.container-nav{
+  width: 70%;
+  margin: 0px auto;
+}
+
+.navbar-nav {
+float: right !important;
+}
+
+.vert-nav-line {
+  position: absolute;
+  top: 7px;
+  left: 314px;
+  height: 45px;
+  width: 1px;
+  border-left: 1px solid #eee;
 }
 
 .navbar-default{
-  width: 300px !important;
+  width: 100% !important;
   margin: 0 0 0 15px !important;
   padding: 5px 0 !important;
   & a {
@@ -31,10 +54,6 @@ body,h1,h2,h3,h4,h5,h6 {
   }
 }
 
-.container-nav{
-  width: 100%;
-  margin: 0px auto;
-}
 
 /*---------------------*/
 /*    Custom-Global    */
