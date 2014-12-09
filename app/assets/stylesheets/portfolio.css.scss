@@ -15,7 +15,13 @@
    color: #67e875;
    text-decoration: none;
    outline: none;
-  }
+ }
+}
+
+.portfolio-item-header:focus {
+  color: #67e875 !important;
+  outline: none !important;
+  text-decoration: none !important;
 }
 
 .portfolio-item-image {
